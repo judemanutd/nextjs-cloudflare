@@ -11,12 +11,15 @@
   "dependencies": {
     "next": "13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "cloudflare:build": "node node_modules/@cloudflare/next-on-pages/bin/index.js --experimental-minify",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^0.1.0",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
+    "patch-package": "^6.5.0",
     "vercel": "^28.4.12"
   }
 }
