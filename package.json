@@ -6,14 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cloudflare:build": "node node_modules/@cloudflare/next-on-pages/bin/index.js --experimental-minify",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "next": "13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "cloudflare:build": "node node_modules/@cloudflare/next-on-pages/bin/index.js --experimental-minify",
-    "postinstall": "patch-package"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^0.1.0",
